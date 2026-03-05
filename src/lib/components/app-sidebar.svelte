@@ -3,6 +3,7 @@
 	import AppLogo from './app-logo.svelte';
 
 	import { useSidebar } from '$lib/components/ui/sidebar/index';
+	import AppThemeToggler from './app-theme-toggler.svelte';
 	const sidebar = useSidebar();
 
 	const user = {
@@ -13,7 +14,9 @@
 
 <Sidebar.Root collapsible="icon">
 	<Sidebar.Header class="p-5">
-		<AppLogo isFull={sidebar.state === 'expanded'} />
+		<a class="w-fit" href="/">
+			<AppLogo isFull={sidebar.state === 'expanded'} />
+		</a>
 	</Sidebar.Header>
 	<Sidebar.Content />
 	<Sidebar.Footer>

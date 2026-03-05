@@ -6,7 +6,7 @@
 
 {#if !isNameOnly}
 	<div class="flex items-center">
-		<span class="text-green-500">
+		<span class="text-chart-2">
 			{@html logoSvg}
 		</span>
 		{#if isFull}
@@ -22,9 +22,7 @@
 {/if}
 
 {#snippet appName()}
-	<span
-		class="bg-linear-to-r from-green-500 to-orange-400 bg-clip-text font-mono font-bold text-transparent"
-	>
+	<span class="text-gradient">
 		{APP_NAME}
 	</span>
 {/snippet}

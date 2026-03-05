@@ -122,3 +122,9 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+@layer components {
+	.text-gradient {
+		@apply bg-linear-to-r from-chart-2 to-chart-3 bg-clip-text font-mono font-bold text-transparent;
+	}
+}
